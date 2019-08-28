@@ -1,0 +1,124 @@
+{
+    "comment": "Commands are put inside an array to maintain ordering at the time of execution",
+    "sessions": [
+        "1"
+    ],
+    "sequence": [
+        {
+            "Params": {
+                "failures": [],
+                "command": "router mpls static crossconnect 5001 in-interface phy-1-1-1 out-interface phy-1-1-2 nexthop 10.10.2.2 out-label 6001",
+                "options": null,
+                "success": "\\(config\\)\\#"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "commit",
+                "options": null,
+                "success": "Commit\\ complete\\."
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "top",
+                "options": null,
+                "success": "\\(config\\)\\#"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "sleep": "4"
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "do show mpls static crossconnect | nomore",
+                "options": null,
+                "success": "Incoming\\ label\\ \\:\\ 5001"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "no router mpls static crossconnect 5001",
+                "options": null,
+                "success": "\\(config\\)\\#"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "commit",
+                "options": null,
+                "success": "Commit\\ complete\\."
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "top",
+                "options": null,
+                "success": "\\(config\\)\\#"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "sleep": "4"
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "do show mpls static crossconnect | nomore",
+                "options": null,
+                "success": "No\\ entries\\ found\\."
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "exit",
+                "options": null,
+                "success": "\\#"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "exit",
+                "options": null,
+                "success": "\\#"
+            },
+            "Sessions": [
+                "1"
+            ]
+        }
+    ]
+}

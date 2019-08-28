@@ -1,0 +1,277 @@
+{
+    "comment": "Commands are put inside an array to maintain ordering at the time of execution",
+    "sessions": [
+        "1"
+    ],
+    "sequence": [
+        {
+            "Params": {
+                "failures": [],
+                "command": "sudo -k ip link add lxcbr1 type bridge",
+                "options": null,
+                "success": "[pP]assword"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "anshul",
+                "options": null,
+                "success": ".*$"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "sudo -k ip link add lxcbr2 type bridge",
+                "options": null,
+                "success": "[pP]assword"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "anshul",
+                "options": null,
+                "success": ".*$"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "sudo -k ip link add lxcbr3 type bridge",
+                "options": null,
+                "success": "[pP]assword"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "anshul",
+                "options": null,
+                "success": ".*$"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "sudo -k ip link set lxcbr1 up",
+                "options": null,
+                "success": "[pP]assword"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "anshul",
+                "options": null,
+                "success": ".*$"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "sudo -k ip link set lxcbr2 up",
+                "options": null,
+                "success": "[pP]assword"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "anshul",
+                "options": null,
+                "success": ".*$"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "sudo -k ip link set lxcbr3 up",
+                "options": null,
+                "success": "[pP]assword"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "anshul",
+                "options": null,
+                "success": ".*$"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "sudo -k lxc-start -n dut1",
+                "options": null,
+                "success": "[pP]assword"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "anshul",
+                "options": null,
+                "success": ".*$"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "sudo -k lxc-attach -n dut1",
+                "options": null,
+                "success": "[pP]assword"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "anshul",
+                "options": null,
+                "success": ".*#"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "sleep": "2"
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "mkdir -p /var/run/system",
+                "options": null,
+                "success": "\\#"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "start_setup clean",
+                "options": {
+                    "timeout": "300"
+                },
+                "success": "\\#"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "exit",
+                "options": null,
+                "success": "\\#"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "ifconfig phy-1-1-1 up",
+                "options": null,
+                "success": "\\#"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "ifconfig phy-1-1-2 up",
+                "options": null,
+                "success": "\\#"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "ip addr add 10.10.1.1/24 dev phy-1-1-1",
+                "options": null,
+                "success": "\\#"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "ip addr add 10.10.2.1/24 dev phy-1-1-2",
+                "options": null,
+                "success": "\\#"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "exit",
+                "options": null,
+                "success": ".*"
+            },
+            "Sessions": [
+                "1"
+            ]
+        }
+    ]
+}

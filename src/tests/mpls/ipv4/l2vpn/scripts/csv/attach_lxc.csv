@@ -1,0 +1,2 @@
+1,sshpass -p 6windos ssh -p 22  -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null root@10.10.10.101,,.*#,,
+2,sshpass -p 6windos ssh -p 22  -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null root@10.10.10.102,,.*#,,

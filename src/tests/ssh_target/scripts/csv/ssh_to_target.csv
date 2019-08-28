@@ -1,0 +1,4 @@
+"1,2","ssh root@192.168.3.135 -p 10100 -o ""UserKnownHostsFile /dev/null""",,Are\ you\ sure\ you\ want\ to\ continue\ connecting\ \(yes\/no\)\?,,
+"1,2",yes,,[pP]assword:,,
+"1,2",6windows,,.*#,,
+"1,2",exit,,Connection to .* closed,,

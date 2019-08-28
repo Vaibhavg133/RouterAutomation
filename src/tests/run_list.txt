@@ -1,0 +1,2 @@
+mpls.ipv4.static.tests.Test.test_static_config_ingress
+mpls.ipv4.static.tests.Test.test_static_config_ingress

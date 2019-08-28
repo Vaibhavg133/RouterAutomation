@@ -1,0 +1,57 @@
+{
+    "comment": "Commands are put inside an array to maintain ordering at the time of execution",
+    "sessions": [
+        "1",
+        "2"
+    ],
+    "sequence": [
+        {
+            "Params": {
+                "failures": [],
+                "command": "ssh root@192.168.3.135 -p 10100 -o \"UserKnownHostsFile /dev/null\"",
+                "options": null,
+                "success": "Are\\ you\\ sure\\ you\\ want\\ to\\ continue\\ connecting\\ \\(yes\\/no\\)\\?"
+            },
+            "Sessions": [
+                "1",
+                "2"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "yes",
+                "options": null,
+                "success": "[pP]assword:"
+            },
+            "Sessions": [
+                "1",
+                "2"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "6windows",
+                "options": null,
+                "success": ".*#"
+            },
+            "Sessions": [
+                "1",
+                "2"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "exit",
+                "options": null,
+                "success": "Connection to .* closed"
+            },
+            "Sessions": [
+                "1",
+                "2"
+            ]
+        }
+    ]
+}

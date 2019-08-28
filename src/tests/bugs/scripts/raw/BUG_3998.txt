@@ -1,0 +1,35 @@
+config
+fru slot 1 sub-slot RTM expected-type XGBE-RTM
+commit
+top
+
+router mpls ip ipv4 10.10.1.1
+commit
+top
+
+interface physical 1/1/1 admin-status up
+mac-address 00:16:3e:b5:18:4c
+ipv4 address 10.10.1.1 prefix 24 address-advertise enable
+commit
+exit
+mpls ip enable
+mtu 1500
+commit
+top
+do show mpls | nomore
+
+router mpls static binding-ip ipv4 10.10.3.2 32 nexthop 10.10.2.2 out-interface phy-1-1-1 out-label 5002
+commit
+top
+
+router mpls static binding-ip ipv4 10.10.4.2 32 nexthop 10.1.20.2 out-interface phy-1-1-1 out-label 5002
+commit
+top
+
+no router mpls static binding-ip ipv4 10.10.4.2 32
+commit
+top
+
+no router mpls static binding-ip ipv4 10.10.3.2 32
+commit
+

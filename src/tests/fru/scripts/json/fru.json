@@ -1,0 +1,74 @@
+{
+    "comment": "Commands are put inside an array to maintain ordering at the time of execution",
+    "sessions": [
+        "1"
+    ],
+    "sequence": [
+        {
+            "Params": {
+                "failures": [],
+                "command": "config",
+                "options": null,
+                "success": "Entering\\ configuration\\ mode\\ terminal"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "fru slot 1 sub-slot RTM expected-type XGBE-RTM",
+                "options": null,
+                "success": "\\(config\\-fru\\-1\\/RTM\\)\\#"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "commit",
+                "options": null,
+                "success": "Commit\\ complete\\."
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "top",
+                "options": null,
+                "success": "\\(config\\)\\#"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "exit",
+                "options": null,
+                "success": "router#"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "exit",
+                "options": null,
+                "success": "\\#"
+            },
+            "Sessions": [
+                "1"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+ssh root@192.168.3.135 -p 10100 -o "UserKnownHostsFile /dev/null"
+]0;vaibhav@lucifer: ~/Desktop/Automation/src/tests/ssh_target[01;31mvaibhav@lucifer[00m:[01;34m~/Desktop/Automation/src/tests/ssh_target[00m$ The authenticity of host '[192.168.3.135]:10100 ([192.168.3.135]:10100)' can't be established.
+ECDSA key fingerprint is SHA256:5v9QOztSEhfouuZGH9rN2M9klUlO+eeeQzOYEG32AxU.
+Are you sure you want to continue connecting (yes/no)? yes
+
+Warning: Permanently added '[192.168.3.135]:10100' (ECDSA) to the list of known hosts.
+root@192.168.3.135's password: 6windows
+
+Permission denied, please try again.
+root@192.168.3.135's password: 

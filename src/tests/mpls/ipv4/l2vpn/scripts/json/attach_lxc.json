@@ -1,0 +1,31 @@
+{
+    "comment": "Commands are put inside an array to maintain ordering at the time of execution",
+    "sessions": [
+        "1",
+        "2"
+    ],
+    "sequence": [
+        {
+            "Params": {
+                "failures": [],
+                "command": "sshpass -p 6windos ssh -p 22  -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null root@10.10.10.101",
+                "options": null,
+                "success": ".*#"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "sshpass -p 6windos ssh -p 22  -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null root@10.10.10.102",
+                "options": null,
+                "success": ".*#"
+            },
+            "Sessions": [
+                "2"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+  "dut_names": ["dut_1", "dut_2"],
+  
+  "dut_1": {
+  	"interfaces":{
+  					"if_0":{
+	  		  				"ifname": "phy-1-1-2",
+						  	"i3Index": "2",
+						  	"ip": "10.10.1.1",
+						  	"ip_hex": "0A:0A:01:01"
+						}
+  				},
+  				
+  	"protocol": {
+		  		"ospf": {
+		  					"area_id": "0.0.0.0",
+		  					"host_id": "10.10.10.1"
+			  			},
+		  		"lmgr": {
+						  	"lsrid": "168427777"
+		  				}
+  	}
+  },
+  
+  "dut_2": {
+  	"interfaces":{
+  					"if_0":{
+	  		  				"ifname": "phy-1-1-2",
+						  	"i3Index": "2",
+						  	"ip": "10.10.1.2",
+						  	"ip_hex": "0A:0A:01:02"
+						}
+  				},
+  	"protocol": {
+		  		"ospf": {
+		  					"area_id": "0.0.0.0",		  		
+		  					"host_id": "10.10.20.1"
+			  			},
+		  		"lmgr": {
+						  	"lsrid": "168427778"
+		  				}
+  	}  				
+  }
+}

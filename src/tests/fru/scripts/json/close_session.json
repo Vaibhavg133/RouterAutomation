@@ -1,0 +1,21 @@
+{
+    "comment": "Commands are put inside an array to maintain ordering at the time of execution",
+    "sessions": [
+        "1"
+    ],
+    "sequence": [
+        {
+            "Params": {
+                "failures": [],
+                "command": "exit",
+                "options": {
+                    "timeout": "10"
+                },
+                "success": "Connection to .* closed"
+            },
+            "Sessions": [
+                "1"
+            ]
+        }
+    ]
+}

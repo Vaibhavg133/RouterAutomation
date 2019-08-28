@@ -1,0 +1,88 @@
+{
+    "comment": "Commands are put inside an array to maintain ordering at the time of execution",
+    "sessions": [
+        "1"
+    ],
+    "sequence": [
+        {
+            "Params": {
+                "failures": [],
+                "command": "router mpls static binding-ip ipv4 10.10.3.2 32 nexthop 10.10.2.2 out-interface phy-1-1-1 out-label 5002 label-stack first-label 4200",
+                "options": null,
+                "success": "\\(config\\)\\#"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "commit",
+                "options": null,
+                "success": "Commit\\ complete\\."
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "top",
+                "options": null,
+                "success": "\\(config\\)\\#"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "sleep": "4"
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "router mpls static binding-ip ipv4 10.10.3.2 32 nexthop 10.10.2.2 out-interface phy-1-1-1 out-label 5002 label-stack first-label 4200 second-label 4300",
+                "options": null,
+                "success": "\\(config\\)\\#"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "commit",
+                "options": null,
+                "success": "Aborted\\:\\ Error\\:\\ \\'router\\ mpls\\ static\\ binding\\-ip\\ ipv4\\ 10\\.10\\.3\\.2\\ 32\\'\\:\\ Label\\ stack\\ is\\ not\\ allowed\\ to\\ be\\ changed\\."
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "abort",
+                "options": null,
+                "success": "\\#"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "exit",
+                "options": null,
+                "success": "\\#"
+            },
+            "Sessions": [
+                "1"
+            ]
+        }
+    ]
+}

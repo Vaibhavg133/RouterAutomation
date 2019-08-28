@@ -1,0 +1,326 @@
+{
+    "comment": "Commands are put inside an array to maintain ordering at the time of execution",
+    "sessions": [
+        "1",
+        "2"
+    ],
+    "sequence": [
+        {
+            "Params": {
+                "failures": [],
+                "command": "router ospf 1 router-id 10.10.1.1",
+                "options": null,
+                "success": "\\(config\\-ospf\\-1\\)\\#"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "router ospf 1 router-id 10.10.1.2",
+                "options": null,
+                "success": "\\(config\\-ospf\\-1\\)\\#"
+            },
+            "Sessions": [
+                "2"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "area 0 network 10.10.1.1 authentication none",
+                "options": null,
+                "success": "\\(config\\-network\\-10\\.10\\.1\\.1\\)\\#"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "area 0 network 10.10.1.2 authentication none",
+                "options": null,
+                "success": "\\(config\\-network\\-10\\.10\\.1\\.2\\)\\#"
+            },
+            "Sessions": [
+                "2"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "administrative-status up",
+                "options": null,
+                "success": "\\(config\\-network\\-10\\.10\\.1\\.1\\)\\#"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "administrative-status up",
+                "options": null,
+                "success": "\\(config\\-network\\-10\\.10\\.1\\.2\\)\\#"
+            },
+            "Sessions": [
+                "2"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "commit",
+                "options": null,
+                "success": "Commit\\ complete"
+            },
+            "Sessions": [
+                "1",
+                "2"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "top",
+                "options": null,
+                "success": "\\(config\\)\\#"
+            },
+            "Sessions": [
+                "1",
+                "2"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "DC-RTM-MIB rtmRedistTable rtmRedistEntry 1 1 rtmRedistInfoSrc infoSourceAllInclConnected rtmRedistInfoDest infoSourceAll rtmRedistRedistFlag true rtmRedistAdminStat adminStatusUp",
+                "options": null,
+                "success": "\\(config\\-rtmRedistEntry\\-1\\/1\\)\\#"
+            },
+            "Sessions": [
+                "1",
+                "2"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "commit",
+                "options": null,
+                "success": "Commit\\ complete"
+            },
+            "Sessions": [
+                "1",
+                "2"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "top",
+                "options": null,
+                "success": "\\(config\\)\\#"
+            },
+            "Sessions": [
+                "1",
+                "2"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "router ospf 1",
+                "options": null,
+                "success": "\\(config\\-ospf\\-1\\)\\#"
+            },
+            "Sessions": [
+                "1",
+                "2"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "area 0 network 10.10.1.1",
+                "options": null,
+                "success": "\\(config\\-network\\-10\\.10\\.1\\.1\\)\\#"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "area 0 network 10.10.1.2",
+                "options": null,
+                "success": "\\(config\\-network\\-10\\.10\\.1\\.2\\)\\#"
+            },
+            "Sessions": [
+                "2"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "dead-interval 500",
+                "options": null,
+                "success": "\\(config\\-network\\-10\\.10\\.1\\.1\\)\\#"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "dead-interval 500",
+                "options": null,
+                "success": "\\(config\\-network\\-10\\.10\\.1\\.2\\)\\#"
+            },
+            "Sessions": [
+                "2"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "commit",
+                "options": null,
+                "success": "Commit\\ complete"
+            },
+            "Sessions": [
+                "1",
+                "2"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "top",
+                "options": null,
+                "success": "\\(config\\)\\#"
+            },
+            "Sessions": [
+                "1",
+                "2"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "router ospf 1",
+                "options": null,
+                "success": "\\(config\\-ospf\\-1\\)\\#"
+            },
+            "Sessions": [
+                "1",
+                "2"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "trap-supoort enable",
+                "options": null,
+                "success": "\\(config\\-ospf\\-1\\)\\#"
+            },
+            "Sessions": [
+                "1",
+                "2"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "nsf unplanned flush-delay-time 250 restart-reason unknown",
+                "options": null,
+                "success": "\\(config\\-ospf\\-1\\)\\#"
+            },
+            "Sessions": [
+                "1",
+                "2"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "commit",
+                "options": null,
+                "success": "Commit\\ complete"
+            },
+            "Sessions": [
+                "1",
+                "2"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "top",
+                "options": null,
+                "success": "\\(config\\)\\#"
+            },
+            "Sessions": [
+                "1",
+                "2"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "router mpls label protocol ldp admin-status up",
+                "options": null,
+                "success": "\\(config\\)\\#"
+            },
+            "Sessions": [
+                "1",
+                "2"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "commit",
+                "options": null,
+                "success": "Commit\\ complete"
+            },
+            "Sessions": [
+                "1",
+                "2"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "top",
+                "options": null,
+                "success": "\\(config\\)\\#"
+            },
+            "Sessions": [
+                "1",
+                "2"
+            ]
+        },
+        {
+            "sleep": "3"
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "do show mpls | no more",
+                "options": null,
+                "success": "MPLS\\ Running\\ Status\\:\\ up"
+            },
+            "Sessions": [
+                "1",
+                "2"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+1,config,,Entering\ configuration\ mode\ terminal,,
+1,fru slot 1 sub-slot RTM expected-type XGBE-RTM,,\(config\-fru\-1\/RTM\)\#,,
+1,commit,,Commit\ complete\.,,
+1,top,,\(config\)\#,,
+1,exit,,router#,,
+1,exit,,\#,,

@@ -1,0 +1,4 @@
+ssh root@192.168.111.82
+yes
+6windos
+exit

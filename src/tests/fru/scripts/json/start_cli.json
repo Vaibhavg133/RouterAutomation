@@ -1,0 +1,113 @@
+{
+    "comment": "Commands are put inside an array to maintain ordering at the time of execution",
+    "sessions": [
+        "1"
+    ],
+    "sequence": [
+        {
+            "Params": {
+                "failures": [],
+                "command": "ssh root@192.168.111.82 -o \"UserKnownHostsFile /dev/null\"",
+                "options": null,
+                "success": "Are\\ you\\ sure\\ you\\ want\\ to\\ continue\\ connecting\\ \\(yes\\/no\\)\\?"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "yes",
+                "options": null,
+                "success": "[pP]assword:"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "6windos",
+                "options": null,
+                "success": ".*#"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "fast-path.sh restart",
+                "options": {
+                    "timeout": "20"
+                },
+                "success": "Fast\\ Path\\ successfully\\ restarted"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "ifconfig lo up",
+                "options": null,
+                "success": ".*#"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "linux-fp-sync.sh restart",
+                "options": {
+                    "timeout": "20"
+                },
+                "success": "Linux\\ Synchronization\\ successfully\\ restarted"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "ip link set dev eth0 name phy-1-1-1",
+                "options": null,
+                "success": ".*#"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "ip link set dev eth1 name phy-1-1-2",
+                "options": null,
+                "success": ".*#"
+            },
+            "Sessions": [
+                "1"
+            ]
+        },
+        {
+            "Params": {
+                "failures": [],
+                "command": "start_setup clean",
+                "options": {
+                    "timeout": "900"
+                },
+                "success": "router#"
+            },
+            "Sessions": [
+                "1"
+            ]
+        }
+    ]
+}

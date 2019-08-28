@@ -1,0 +1,23 @@
+{
+    "comment": "Commands are put inside an array to maintain ordering at the time of execution",
+    "sequence": [
+        {
+            "wait": {
+                "failures": [],
+                "success": "10"
+            }
+        },
+        {
+            "wait": {
+                "failures": [],
+                "success": "5"
+            }
+        },
+        {
+            "not internal": {
+                "failures": [],
+                "success": "Yes"
+            }
+        }
+    ]
+}

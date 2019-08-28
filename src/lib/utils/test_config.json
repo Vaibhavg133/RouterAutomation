@@ -1,0 +1,485 @@
+{
+    "comment": "Commands are put inside an array to maintain ordering at the time of execution",
+    "sequence": [
+        {
+            "unhide hidemib-group": {
+                "failures": [],
+                "success": "[pP]assword:"
+            }
+        },
+        {
+            "newscope": {
+                "failures": [],
+                "success": ".*\\(config\\)#"
+            }
+        },
+        {
+            "DC-I3-MIB i3EmuTable i3EmuEntry 1 i3EmuAdminStatus adminStatusUp": {
+                "failures": [],
+                "success": ".*\\(config-i3EmuEntry-1\\)#"
+            }
+        },
+        {
+            "commit": {
+                "failures": [],
+                "success": "Commit complete\\."
+            }
+        },
+        {
+            "top": {
+                "failures": [],
+                "success": ".*\\(config\\)#"
+            }
+        },
+        {
+            "DC-SCK-MIB sckTable sckEntry 1 sckAdminStatus adminStatusUp": {
+                "failures": [],
+                "success": ".*\\(config-sckEntry-1\\)#"
+            }
+        },
+        {
+            "commit": {
+                "failures": [],
+                "success": "Commit complete\\."
+            }
+        },
+        {
+            "top": {
+                "failures": [],
+                "success": ".*\\(config\\)#"
+            }
+        },        
+        {
+            "DC-I3-MIB i3EiTable i3EiEntry 1 1 0 <if_0:i3Index> i3EiOperStatus operStatusUp": {
+                "failures": [],
+                "success": ".*\\(config-i3EiEntry-1/1/0/<if_0:i3Index>\\)"
+            }
+        },
+        {
+            "commit": {
+                "failures": [],
+                "success": "Commit complete\\."
+            }
+        },
+        {
+            "top": {
+                "failures": [],
+                "success": ".*\\(config\\)#"
+            }
+        },        
+        {
+            "DC-I3-MIB i3EiTable i3EiEntry 1 1 0 <if_0:i3Index> i3EiIfFlags broadcast,multicast,routing": {
+                "failures": [],
+                "success": ".*\\(config-i3EiEntry-1/1/0/<if_0:i3Index>\\)"
+            }
+        },
+        {
+            "commit": {
+                "failures": [],
+                "success": "Commit complete\\."
+            }
+        },
+        {
+            "top": {
+                "failures": [],
+                "success": ".*\\(config\\)#"
+            }
+        },
+        {
+            "DC-I3-MIB i3EaTable i3EaEntry 1 1 0 <if_0:i3Index> ipv4 <if_0:ip_hex>": {
+                "failures": [],
+                "success": ".*\\(config-i3EaEntry-1/1/0/<if_0:i3Index>/ipv4/<if_0:ip_hex>\\)"
+            }
+        },
+        {
+            "i3EaAddressAdvertise true i3EaAddressUse stable": {
+                "failures": [],
+                "success": ".*\\(config-i3EaEntry-1/1/0/<if_0:i3Index>/ipv4/<if_0:ip_hex>\\)"
+            }
+        },
+        {
+            "commit": {
+                "failures": [],
+                "success": "Commit complete\\."
+            }
+        },
+        {
+            "top": {
+                "failures": [],
+                "success": ".*\\(config\\)#"
+            }
+        },
+        {
+            "DC-I3-MIB i3EmTable i3EmEntry 1 1 0": {
+                "failures": [],
+                "success": ".*\\(config-i3EmEntry-1/1/0\\)#"
+            }
+        },
+        {
+            "i3EmAdminStatus adminStatusUp i3EmIfOperStatus operStatusUp i3EmGlobalLabelSpace true i3EmLabelSpace gen": {
+                "failures": [],
+                "success": ".*\\(config-i3EmEntry-1/1/0\\)#"
+            }
+        },
+        {
+            "commit": {
+                "failures": [],
+                "success": "Commit complete\\."
+            }
+        },
+        {
+            "top": {
+                "failures": [],
+                "success": ".*\\(config\\)#"
+            }
+        },
+        {
+            "DC-I3-MIB i3EmTable i3EmEntry 1 1 <if_0:i3Index>": {
+                "failures": [],
+                "success": ".*\\(config-i3EmEntry-1/1/<if_0:i3Index>\\)#"
+            }
+        },
+        {
+            "i3EmAdminStatus adminStatusUp i3EmIfOperStatus operStatusUp i3EmGlobalLabelSpace true i3EmSignallingCaps ldp": {
+                "failures": [],
+                "success": ".*\\(config-i3EmEntry-1/1/<if_0:i3Index>\\)#"
+            }
+        },
+        {
+            "i3EmHelloAddrFlags helloGlsAddr i3EmLabelSpace gen": {
+                "failures": [],
+                "success": ".*\\(config-i3EmEntry-1/1/<if_0:i3Index>\\)#"
+            }
+        },
+        {
+            "commit": {
+                "failures": [],
+                "success": "Commit complete\\."
+            }
+        },
+        {
+            "top": {
+                "failures": [],
+                "success": ".*\\(config\\)#"
+            }
+        },
+        {
+            "DC-I3-MIB i3EmTable i3EmEntry 1 1 <if_0:i3Index> i3EmDistMode unsolicited i3EmRetenMode liberal": {
+                "failures": [],
+                "success": ".*\\(config-i3EmEntry-1/1/<if_0:i3Index>\\)#"
+            }
+        },
+        {
+            "commit": {
+                "failures": [],
+                "success": "Commit complete\\."
+            }
+        },
+        {
+            "top": {
+                "failures": [],
+                "success": ".*\\(config\\)#"
+            }
+        },
+        {
+            "DC-FTS-MIB ftsEntityTable ftsEntityEntry 1": {
+                "failures": [],
+                "success": ".*\\(config-ftsEntityEntry-1\\)#"
+            }
+        },
+        {
+            "commit": {
+                "failures": [],
+                "success": "Commit complete\\."
+            }
+        },
+        {
+            "top": {
+                "failures": [],
+                "success": ".*\\(config\\)#"
+            }
+        },
+        {
+            "DC-RTM-MIB rtmEntityTable rtmEntityEntry 1 rtmEntityAddressFamily ipv4 rtmEntityI3Index 1 rtmEntityAdminStat adminStatusUp": {
+                "failures": [],
+                "success": ".*\\(config-rtmEntityEntry-1\\)#"
+            }
+        },
+        {
+            "commit": {
+                "failures": [],
+                "success": "Commit complete\\."
+            }
+        },
+        {
+            "top": {
+                "failures": [],
+                "success": ".*\\(config\\)#"
+            }
+        },
+        {
+            "DC-RTM-MIB rtmMjTable rtmMjEntry 1 1 ariPrtnrFt rtmMjAdminStatus adminStatusUp": {
+                "failures": [],
+                "success": ".*\\(config-rtmMjEntry-1/1/ariPrtnrFt\\)#"
+            }
+        },
+        {
+            "commit": {
+                "failures": [],
+                "success": "Commit complete\\."
+            }
+        },
+        {
+            "top": {
+                "failures": [],
+                "success": ".*\\(config\\)#"
+            }
+        },
+        {
+            "DC-RTM-MIB rtmRedistTable rtmRedistEntry 1 1 rtmRedistInfoSrc infoSourceAllInclConnected rtmRedistInfoDest infoSourceAllInclConnected": {
+                "failures": [],
+                "success": ".*\\(config-rtmRedistEntry-1/1\\)#"
+            }
+        },
+        {
+            "rtmRedistRedistFlag true rtmRedistAdminStat adminStatusUp": {
+                "failures": [],
+                "success": ".*\\(config-rtmRedistEntry-1/1\\)#"
+            }
+        },
+        {
+            "commit": {
+                "failures": [],
+                "success": "Commit complete\\."
+            }
+        },
+        {
+            "top": {
+                "failures": [],
+                "success": ".*\\(config\\)#"
+            }
+        },
+        {
+            "DC-OSPF-MIB ospfPmEntTable ospfPmEntEntry 1 ospfPmEntI3EntIndex 1 ospfPmEntAdminStat adminStatusUp": {
+                "failures": [],
+                "success": ".*\\(config-ospfPmEntEntry-1\\)#"
+            }
+        },
+        {
+            "commit": {
+                "failures": [],
+                "success": "Commit complete\\."
+            }
+        },
+        {
+            "top": {
+                "failures": [],
+                "success": ".*\\(config\\)#"
+            }
+        },
+        {
+            "DC-OSPF-MIB ospfNmEntTable ospfNmEntEntry 1 ospfNmEntAdminStatus adminStatusUp": {
+                "failures": [],
+                "success": ".*\\(config-ospfNmEntEntry-1\\)#"
+            }
+        },
+        {
+            "commit": {
+                "failures": [],
+                "success": "Commit complete\\."
+            }
+        },
+        {
+            "top": {
+                "failures": [],
+                "success": ".*\\(config\\)#"
+            }
+        },
+        {
+            "DC-OSPF-MIB ospfPmMjTable ospfPmMjEntry 1 ifRteProtInput 1 ospfPmMjAdminStatus adminStatusUp": {
+                "failures": [],
+                "success": ".*\\(config-ospfPmMjEntry-1/ifRteProtInput/1\\)#"
+            }
+        },
+        {
+            "commit": {
+                "failures": [],
+                "success": "Commit complete\\."
+            }
+        },
+        {
+            "top": {
+                "failures": [],
+                "success": ".*\\(config\\)#"
+            }
+        },
+        {
+            "DC-OSPF-MIB ospfPmAreaTable ospfPmAreaEntry 1 <ospf:area_id> ospfPmAreaAdminStatus adminStatusUp": {
+                "failures": [],
+                "success": ".*\\(config-ospfPmAreaEntry-1/<ospf:area_id>\\)#"
+            }
+        },
+        {
+            "commit": {
+                "failures": [],
+                "success": "Commit complete\\."
+            }
+        },
+        {
+            "top": {
+                "failures": [],
+                "success": ".*\\(config\\)#"
+            }
+        },
+        {
+            "DC-OSPF-MIB ospfPmIfTable ospfPmIfEntry 1 <if_0:ip> 0 ospfPmIfAreaId <ospf:area_id> ospfPmIfAdminStat adminStatusUp": {
+                "failures": [],
+                "success": ".*\\(config-ospfPmIfEntry-1/<if_0:ip>/0\\)#"
+            }
+        },
+        {
+            "commit": {
+                "failures": [],
+                "success": "Commit complete\\."
+            }
+        },
+        {
+            "top": {
+                "failures": [],
+                "success": ".*\\(config\\)#"
+            }
+        },
+        {
+            "DC-RLDF-MIB dcLmgrLdfEntityTable dcLmgrLdfEntityEntry 1": {
+                "failures": [],
+                "success": ".*\\(config-dcLmgrLdfEntityEntry-1\\)#"
+            }
+        },
+        {
+            "dcLmgrLdfEntityI3EntIndex 1 dcLmgrLdfEntityAdminStatus adminStatusUp dcLmgrLdfEntityEnableIPI true": {
+                "failures": [],
+                "success": ".*\\(config-dcLmgrLdfEntityEntry-1\\)#"
+            }
+        },
+        {
+            "commit": {
+                "failures": [],
+                "success": "Commit complete\\."
+            }
+        },
+        {
+            "top": {
+                "failures": [],
+                "success": ".*\\(config\\)#"
+            }
+        },
+        {
+            "DC-LMGR-MIB dcLmgrLsrEntityTable dcLmgrLsrEntityEntry 1": {
+                "failures": [],
+                "success": ".*\\(config-dcLmgrLsrEntityEntry-1\\)#"
+            }
+        },
+        {
+            "dcLmgrLsrEntityLsrId <lmgr:lsrid> dcLmgrLsrEntityTranAddrType ipv4": {
+                "failures": [],
+                "success": ".*\\(config-dcLmgrLsrEntityEntry-1\\)#"
+            }
+        },
+        {
+            "dcLmgrLsrEntityTranAddr <if_0:ip_hex> dcLmgrLsrI3EntIndex 1 dcLmgrLsrEntityAdminStatus adminStatusUp": {
+                "failures": [],
+                "success": ".*\\(config-dcLmgrLsrEntityEntry-1\\)#"
+            }
+        },
+        {
+            "commit": {
+                "failures": [],
+                "success": "Commit complete\\."
+            }
+        },
+        {
+            "top": {
+                "failures": [],
+                "success": ".*\\(config\\)#"
+            }
+        },
+        {
+            "DC-CR-LDP-MIB dccrldpPmTable dccrldpPmEntry 1": {
+                "failures": [],
+                "success": ".*\\(config-dccrldpPmEntry-1\\)#"
+            }
+        },
+        {
+            "dccrldpPmLsrIndex 1 dccrldpPmLdpSupported true dccrldpPmLdpEntityCreateNhrLdb false dccrldpPmLdpEntityCreateLdbJoin true": {
+                "failures": [],
+                "success": ".*\\(config-dccrldpPmEntry-1\\)#"
+            }
+        },
+        {
+            "dccrldpPmLdpEntityRpi4PartnerIx 1 dccrldpPmLdpEntityI3ProviderIx 1 dccrldpPmAdminStatus up": {
+                "failures": [],
+                "success": ".*\\(config-dccrldpPmEntry-1\\)#"
+            }
+        },
+        {
+            "commit": {
+                "failures": [],
+                "success": "Commit complete\\."
+            }
+        },
+        {
+            "top": {
+                "failures": [],
+                "success": ".*\\(config\\)#"
+            }
+        },
+        {
+            "DC-CR-LDP-MIB dccrldpSigTable dccrldpSigEntry 1": {
+                "failures": [],
+                "success": ".*\\(config-dccrldpSigEntry-1\\)#"
+            }
+        },
+        {
+            "dccrldpSigPathManagerIndex 1 dccrldpSigLsrIndex 1 dccrldpSigSocketIfIndex 1 dccrldpSigUseI3Interface true": {
+                "failures": [],
+                "success": ".*\\(config-dccrldpSigEntry-1\\)#"
+            }
+        },
+        {
+            "dccrldpSigI3ProviderIndex 1 dccrldpSigAdminStatus up": {
+                "failures": [],
+                "success": ".*\\(config-dccrldpSigEntry-1\\)#"
+            }
+        },
+        {
+            "commit": {
+                "failures": [],
+                "success": "Commit complete\\."
+            }
+        },
+        {
+            "top": {
+                "failures": [],
+                "success": ".*\\(config\\)#"
+            }
+        },
+        {
+            "DC-OSPF-MIB ospfPmHostTable ospfPmHostEntry 1 <ospf:host_id> 0 ospfPmHostAdminStatus adminStatusUp": {
+                "failures": [],
+                "success": ".*\\(config-ospfPmHostEntry-1/<ospf:host_id>/0\\)#"
+            }
+        },
+        {
+            "commit": {
+                "failures": [],
+                "success": "Commit complete\\."
+            }
+        },
+        {
+            "top": {
+                "failures": [],
+                "success": ".*\\(config\\)#"
+            }
+        }
+    ]
+}
